@@ -1,0 +1,45 @@
+/**
+ * Базовые миксины
+ */
+	
+	/* Базовый миксин для стандартизации размеров контейнера с контентом */
+@define-mixin block-base {
+	@mixin --cm-from-big-desktop {
+	    width: $big-desktop;
+	}
+
+	@mixin --cm-desktop-to-big-desktop {
+	    width: $desktop;
+	}
+
+	@mixin --cm-tablet-to-desktop {
+	    width: $tablet;
+	}
+
+	@mixin --cm-big-mobile-to-tablet {
+	    width: $big-mobile;
+	}
+
+	@mixin --cm-to-big-mobile {
+	    width: $mobile;
+	}
+}
+
+	/* Базовый миксин для задания position: absolute */
+@define-mixin position-absolute $y, $x {
+	position: absolute;
+
+    @if $y == top {
+        top: 0;
+    }
+    @else {
+    	bottom: 0;
+    }
+
+    @if $x == left {
+        left: 0;
+    }
+    @else {
+    	right: 0;
+    }
+}	

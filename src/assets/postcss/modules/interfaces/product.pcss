@@ -1,0 +1,48 @@
+.product {
+	&__container {
+		@mixin display-flex row, wrap, space-between;
+		@mixin block-base;
+		margin: auto;
+	}
+
+	&__content {
+		&-left {
+			@mixin display-flex column, nowrap, flex-start, center;
+			width: 40%;
+		}
+
+		&-right {
+			@mixin display-flex column, nowrap, center;
+			width: 50%;
+		}
+	}
+
+	&__image {
+		width: 313px;
+    	height: 258px;
+    	background-position: center;
+	}
+
+	&__text {
+		line-height: 20px;
+	}
+
+	&__stars {
+		@mixin display-flex column, nowrap, flex-start, center;
+		
+		&-text {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__return {
+		margin-top: 20px;
+		padding: 10px;
+		border: $border-light-grey;
+		cursor: pointer;
+	}
+
+	&__button {
+		margin-top: 20px;
+	}
+}

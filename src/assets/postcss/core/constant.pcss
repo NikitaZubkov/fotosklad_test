@@ -1,0 +1,58 @@
+	/* Цвета */
+$white: #ffffff;
+$black: #000000;
+
+$white-hover: #f1f1f1;
+
+$grey: #999999;
+$light-grey: #f1f1f1;
+$light-blue: #b1c0d7;
+$yellow: #ffae2b;
+$red: red;
+$light-red: #f85564;
+$green: #2ad261;
+
+	/* Анимация */
+$transition-4: all 0.4s;
+$transition-base: $transition-4;
+
+	/* Background */
+$background-base: rgba($white, 0.8);
+
+	/* Border */
+$border-light-blue: 1px solid $light-blue;
+$border-light-grey: 1px solid $light-grey;
+
+	/* Шрифты */
+$font-family-RubikLight: 'Rubik-Light', Arial, Tahoma, sans-serif;
+$font-family-RubikMedium: 'Rubik-Medium', Arial, Tahoma, sans-serif;
+$font-family-RubikRegular: 'Rubik-Regular', Arial, Tahoma, sans-serif;
+
+	/* Базовый шрифт, размер и цвет на странице */
+$font-family-base: $font-family-RubikRegular;
+$font-size-base: 14px;
+$font-color-base: $black;
+
+	/* Базовая высота/ширина */
+$header-height: 50px;
+
+	/* z-index */
+$z-index-base: 1;
+$z-index-level-1: 5;
+$z-index-level-2: 10;
+$z-index-level-3: 15;
+$z-index-level-4: 20;
+	
+	/* Базовые разрешения */
+$big-desktop: 1600px;
+$desktop: 1280px;
+$tablet: 960px;
+$big-mobile: 640px;
+$mobile: 320px;
+
+	/* Подготовленные разрешения для вставки в media */
+$self: 1px;
+$big-desktop-less: 		resolve($big-desktop - $self);
+$desktop-less: 		resolve($desktop - $self);
+$tablet-less: 		resolve($tablet - $self);
+$big-mobile-less:	resolve($big-mobile - $self);
